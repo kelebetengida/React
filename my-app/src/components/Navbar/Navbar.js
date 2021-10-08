@@ -1,24 +1,38 @@
-import React, { Component } from "react";
-import { MenuItems } from "./Menuitems";
-import "./Namvbar.css";
-class Navbar extends Component {
-    render() {
-        return (
-            <nav className="NavbarItems">
-                <h1 className="navbar-logo"> KELEBET ENGIDA<i className="'fab fa-react"></i></h1>
-                
-                <ul>
-                    {MenuItems.map((item, index) => {
-                        return <li key={index}>
-                            <a className={item.cName} href={item.url}>
-                                {item.title}
-                            </a></li>
-                    })}
+import React from "react";
 
-                </ul>
-            </nav>
-        )
-    }
-}
+import {Nav, NavLink, Bars, NavMenu, NavL} from "./navbarelements"
+const Navbar = () => {
+    return (
+        <>
+            <Nav>
+                <NavL to="/">
+                    
+                        <h1 >Kelebet Engida</h1>
+                    
+                </NavL>
+                <Bars />
+                <NavMenu>
+                    <NavLink to="/about" activeStyle>
+                        About Me
+                    </NavLink>
+                    <NavLink to="/portfolio" activeStyle>
+                        Portfolio
+                    </NavLink>
+                    <NavLink to="/contact-me" activeStyle>
+                        Contact Me
+                    </NavLink>
+                    
+                    <NavLink to="/resume" activeStyle>
+                        Resume
+                    </NavLink>
+                     {/* Second Nav */}
+                {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+                </NavMenu>
+                
+            </Nav>
+        </>
+        );
+    
+};
 
 export default Navbar;

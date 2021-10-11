@@ -67,15 +67,15 @@ export default function ProjectCard() {
         <div>
             <main>
                 <h3>Work</h3>
-                <section style={{ display: "flex", flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between",  fontSize: "20px" }}>
+                <section >
                     
-                    <article  >
+                    <div style={{ display: "flex", flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between",  fontSize: "20px" }} >
                         {workData.map((work) => (
                             <PorfolioCard title={work.title} tech={work.tech} cName={work.cName} appLink={work.appLink} repoLink={work.repoLink}>
                                  <img src={imgs} alt="" />
                                  </PorfolioCard>
                         ))}
-                    </article>
+                    </div>
                 </section>
             </main>
         </div>

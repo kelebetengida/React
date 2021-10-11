@@ -25,6 +25,7 @@ const Navbar = () => {
                     <NavLink to="/resume" activeStyle>
                         Resume
                     </NavLink>
+
                      {/* Second Nav */}
                 {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
                 </NavMenu>

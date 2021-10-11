@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 export const Footing = styled.div`
 background: linear-gradient(90deg, #E7717D 9%, #C2CAD0 100%);
-  height: 85px;
+  height: 95px;
   display: flex;
   align-item: center;
   
   justify-content: center;
   padding: 0.1rem calc((10vw - 100px) / 2);
-  z-index: 10;
+  
   color:#fff;
   
   /* Third Nav */

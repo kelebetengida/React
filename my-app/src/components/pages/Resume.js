@@ -1,14 +1,11 @@
 import React from "react";
-import { Document } from "react-pdf"
-import RESUME from "../Assets/RESUME.pdf"
-import { Page } from 'react-pdf'
+import img from "../Assets/Picture1.png"
 const Resume = () => {
     return (
-        <div style={{ background: "linear-gradient(360deg, #AFD275 9%, #C2CAD0 100%, #AFD275 9%)", height: "150%" }}>
+        <div style={{ background: "linear-gradient(360deg, #AFD275 9%, #C2CAD0 100%, #AFD275 9%)" ,justifyContent: "center"}}>
             <h1 style={{ display: "flex", justifyContent: "center" }}>Resume</h1>
-            <Document file={RESUME}>
-                <Page pageNumber={1} />
-            </Document>
+
+            <img style={{ width: "60%",  alignItems:"center", marginLeft:"300px"}} src={img}alt="" />
         </div>
     );
 

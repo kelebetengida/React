@@ -7,7 +7,10 @@ background: linear-gradient(90deg, #E7717D 9%, #C2CAD0 100%);
   height: 95px;
   display: flex;
   align-item: center;
-  
+  position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
   justify-content: center;
   padding: 0.1rem calc((10vw - 100px) / 2);
   

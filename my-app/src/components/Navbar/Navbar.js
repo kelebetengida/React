@@ -1,16 +1,16 @@
 import React from "react";
 
-import {Nav, NavLink, Bars, NavMenu, NavL} from "./navbarelements"
+import { Nav, NavLink,  NavMenu, NavL } from "./navbarelements"
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavL to="/">
-                    
-                        <h1 >Kelebet Engida</h1>
-                    
+
+                    <h1 >Kelebet Engida</h1>
+
                 </NavL>
-                <Bars />
+                
                 <NavMenu>
                     <NavLink to="/about" activeStyle>
                         About Me
@@ -18,22 +18,20 @@ const Navbar = () => {
                     <NavLink to="/portfolio" activeStyle>
                         Portfolio
                     </NavLink>
-                    <NavLink to="/contact-me" activeStyle>
+                    <NavLink to="/contactme" activeStyle>
                         Contact Me
                     </NavLink>
-                    
+
                     <NavLink to="/resume" activeStyle>
                         Resume
                     </NavLink>
 
-                     {/* Second Nav */}
-                {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
                 </NavMenu>
-                
+
             </Nav>
         </>
-        );
-    
+    );
+
 };
 
 export default Navbar;

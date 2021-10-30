@@ -6,6 +6,7 @@ const workData =
     [
         {
             "title": "Life Happens",
+            "img": "../Assets/seattle.jpg",
             "tech": "HTML, CSS, JavaScript / Bulma / Third-party APIs",
             "cName": "Life Happens",
             "appLink": "https://ywkuo227.github.io/life-happens/",

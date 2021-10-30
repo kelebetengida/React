@@ -26,7 +26,7 @@ export const NavL = styled.nav`
   font-size: 34px;
   background-color: #7E685A;
   margin-top:8px;
-  margin-left:-30px;
+  margin-left:-25px;
   text-decoration: none;
   padding: 0 3rem;
   height: 69%;

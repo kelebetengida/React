@@ -6,7 +6,7 @@ const workData =
     [
         {
             "title": "Life Happens",
-            "img": "../Assets/seattle.jpg",
+            "img": "Picture5.png",
             "tech": "HTML, CSS, JavaScript / Bulma / Third-party APIs",
             "cName": "Life Happens",
             "appLink": "https://ywkuo227.github.io/life-happens/",
@@ -14,20 +14,22 @@ const workData =
         },
         {
             "title": "Password-Generator",
+            "img": "loginScreenshot.png",
             "tech": "HTML, CSS, Java Script",
             "cName": "Password-Generator",
             "appLink": "https://kelebetengida.github.io/Password-Generator/",
             "repoLink": "https://github.com/kelebetengida/Password-Generator.git"
         },
         {
-            "title": "Workday-Calander-",
-            "tech": "HTML, CSS, Java Script, JQuery, Moment.js",
+            "title": "Profile-Generator",
+            "img": "Picture10.png",
+            "tech": "HTML, JavaScript, NPM module, Jest, Inquiere",
             "cName": "workcards scheduler",
-            "appLink": "https://github.com/kelebetengida/Workday-Calander-.git",
-            "repoLink": "https://github.com/ywkuo227/work-day-scheduler"
+            "repoLink": "https://github.com/kelebetengida/OOP-Profile-Generator.git"
         },
         {
-            "title": "E-Commerce-Back-End",
+            "title": "E-Commerce-Back-End", 
+            "img": "13-orm-homework-demo-02.gif",
             "tech": " NodeJS, API express, mysql2, sequelize, Insomnia",
             "cName": "E-Commerce-Back-End",
             "appLink": "",
@@ -35,13 +37,15 @@ const workData =
         },
         {
             "title": "Facility Management",
-            "tech": "Node.js / Express.js / MySQL / MVC / Handlebars",
+            "img": "Laptop_View.png",
+            "tech": "Handlebars, Javascript, Node.js, Express.js, MySQL, Insomia Core, Heroku, Bootstrap, Sequelize, Moment,Handlebars-dateformat",
             "cName": "Facility Management",
             "appLink": "https://dn-fac-mgmt.herokuapp.com/",
             "repoLink": "https://github.com/DN-Vanguard/Facility_Management"
         },
         {
             "title": "EMT-Quiz",
+            "img": "Picture5.png",
             "tech": "HTML, CSS, JS",
             "cName": "EMT-Quiz",
             "appLink": "https://kelebetengida.github.io/EMT-Quiz/",
@@ -49,6 +53,7 @@ const workData =
         },
         {
             "title": "Take your Notes",
+            "img": "11-express-homework-demo-01.png",
             "tech": "Bootstrap, Node.js / Express.js / Heroku",
             "cName": "Take your Notes",
             "appLink": "https://note-taker-with-express.herokuapp.com/",
@@ -56,17 +61,19 @@ const workData =
         },
         {
             "title": "Weather Dashboard",
+            "img": "Picture1.png",
             "tech": "HTML, CSS, Javascript, Jquery, Bootstrap",
             "cName": "Weather Dashboard",
             "appLink": "https://kelebetengida.github.io/Weather-CH/",
             "repoLink": "https://github.com/kelebetengida/Weather-CH.git"
         },
         {
-            "title": "Refactoring Horiseons webpage",
-            "tech": "Fixing accessibility Standards",
-            "cName": "Refactoring Horiseons",
-            "appLink": "https://kelebetengida.github.io/Refactoring-Horiseon-s-webpage/",
-            "repoLink": "https://github.com/kelebetengida/Refactoring-Horiseon-s-webpage.git"
+            "title": "Family Knowledge Exchange",
+            "img": "responsivedes.png",
+            "tech": "Express.js, React.js, React-Bootstrap, styled-component, JWT validation, Node.js, MongoDB, Apollo-Server-Express, GraphQL",
+            "cName": "Family Knowledge Exchange",
+            "appLink": "https://fierce-island-14478.herokuapp.com/",
+            "repoLink": "https://github.com/kelebetengida/family-knowledge-exchange.git"
         }
     ];
 
@@ -77,9 +84,9 @@ export default function ProjectCard() {
                 <h1 class="h1-responsive font-weight-bold text-center my-0">Work</h1>
                 <section >
 
-                    <div style={{ display: "grid", gridTemplateColumns: "auto auto auto", padding: "0px", justifyContent: "center", padding: "60px" }}>
+                    <div style={{ display: "grid", gridTemplateColumns: "auto auto auto",  justifyContent: "center", paddingBottom: "80px" }}>
                         {workData.map((work) => (
-                            <PorfolioCard title={work.title} tech={work.tech} cName={work.cName} appLink={work.appLink} repoLink={work.repoLink}>
+                            <PorfolioCard title={work.title} tech={work.tech} cName={work.cName} appLink={work.appLink} repoLink={work.repoLink} img={work.img}>
                                 <img src={imgs} alt="" />
                             </PorfolioCard>
                         ))}

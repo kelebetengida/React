@@ -2,17 +2,20 @@ import React from "react";
 
 export default function PorfolioCard(props) {
   return (
-    <button 
+    <button
       style={{
         display: "flex",
-       flexWrap:"wrap",
+        flexWrap: "wrap",
         justifyContent: "center",
         flexWrap: "wrap",
-        margin: ".9rem",
-        width: "90%",
-        padding: "25px",
+        
+        width: "80%",
+        padding: "60px",
         height: "100%",
-        backgroundAttachment:"{props.img}"
+        backgroundImage: `url(/images/${props.img})`,
+        backgroundSize:"100%",
+        opacity:"0.8",
+        fontWeight:"bolder"
       }}
       cName={props.cName}
       onClick={() => {
@@ -20,7 +23,6 @@ export default function PorfolioCard(props) {
       }}
     >
       <div cName="workcard-description">
-          
         <h4>{props.title}</h4>
         <p>{props.tech}</p>
         <p className="workcards-links">

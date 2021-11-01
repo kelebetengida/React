@@ -81,21 +81,18 @@ export default function ProjectCard() {
     return (
         <div style={{ background: "linear-gradient(360deg, #AFD275 9%, #C2CAD0 100%, #AFD275 9%)", justifyContent: "center" }}>
             <main>
-                <h1 class="h1-responsive font-weight-bold text-center my-0">Work</h1>
+                <h1 class="h1-responsive font-weight-bold text-center my-0">Work </h1><br/><br/>
                 <section >
 
-                    <div style={{ display: "grid", gridTemplateColumns: "auto auto auto",  justifyContent: "center", paddingBottom: "80px" }}>
+                    <div style={{ display: "grid", gridTemplateColumns: "auto  ",   paddingBottom: "80px" }}>
                         {workData.map((work) => (
                             <PorfolioCard title={work.title} tech={work.tech} cName={work.cName} appLink={work.appLink} repoLink={work.repoLink} img={work.img}>
-                                <img src={imgs} alt="" />
+                                
                             </PorfolioCard>
                         ))}
                     </div>
                 </section>
-                <div >
-                    <img style={{ display: "flex", width: "100%" }} src={img3} alt="" />
-                    <h2 style={{ fontSize: "45px", justifyContent: "center", alignItems: "center" }}>Welcome to my page!</h2>
-                </div>
+               
             </main>
         </div>
     )

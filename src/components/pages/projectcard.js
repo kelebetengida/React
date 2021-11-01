@@ -6,12 +6,13 @@ export default function PorfolioCard(props) {
       style={{
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center",
-        flexWrap: "wrap",
         
-        width: "80%",
-        padding: "60px",
-        height: "100%",
+    width: "80%",
+    float: "left",
+    marginLeft: "170px",
+    marginBottom: "80px",
+    padding: "90px",
+        paddingBottom:"100px",
         backgroundImage: `url(/images/${props.img})`,
         backgroundSize:"100%",
         opacity:"0.8",
@@ -22,10 +23,10 @@ export default function PorfolioCard(props) {
         window.location = props.appLink;
       }}
     >
-      <div cName="workcard-description">
-        <h4>{props.title}</h4>
-        <p>{props.tech}</p>
-        <p className="workcards-links">
+      <div style={{ backgroundColor:"White", PaddingLeft:"-100px", borderBlock:"solid", }} cName="workcard-description">
+        <h4 >{props.title}</h4>
+        <p > {props.tech}</p>
+        <p  className="workcards-links">
           <a href={props.repoLink}>GitHub Repo</a>
         </p>
       </div>

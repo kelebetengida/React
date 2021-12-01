@@ -47,7 +47,7 @@ export default function ContactMe() {
             </p>
 
             <p>
-              Email: <a href="mailto:ywkuo@outlook.com">engidk@uw.edu</a>
+              Email: <a href="mailto:ywkuo@outlook.com">kelebetaengida@gmail.com</a>
             </p>
           </div>
           <div class="col-md-6">

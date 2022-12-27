@@ -3,11 +3,11 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 
 import Footing from "./components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes , Route } from "react-router-dom"
 import './App.css';
 import About from "./components/pages/About.js";
 import Portfolio from "./components/pages/Portfolio.js";
-import contacts from "./components/pages/contactme.js";
+import Contacts from "./components/pages/contactme";
 import Resume from "./components/pages/Resume";
 
 
@@ -16,13 +16,13 @@ function App() {
     <Router>
 
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={About} />
-        <Route path="/about" exact component={About} />
-        <Route path="/Portfolio" exact component={Portfolio} />
-        <Route path="/Resume" exact component={Resume} />
-        <Route path="/contactme" exact component={contacts} />
-      </Switch>
+      <Routes >
+        <Route path="/" element={<About/>}/>
+        <Route path="/about" element={<About/>} />
+        <Route path="/Portfolio" element={<Portfolio/>} />
+        <Route path="/Resume" element={<Resume/>} />
+        <Route path="/contactme" element={<Contacts/>} />
+      </Routes >
 
       <Footing />
     </Router>
